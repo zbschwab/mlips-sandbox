@@ -29,3 +29,24 @@ Newton's method: use gradient 'g' (1st deriv.) and Hessian 'H' (2nd deriv.) matr
 computing 3N x 3N derivs for Hessian is expensive, so BFGS approximates H and updates with each step
 
 
+ADSORPTION
+absorption: substance permeates interior (bulk) of material
+adsorption: substance adheres to surface of material
+    physisorption: weak van der Waals interaction, molecule barely disturbed, easily reversible
+                   ex. water condensation
+    chemisorption: actual chemical bond forms between surface and material, stronger
+                   ex. oxygen bonds with iron's surface --> iron oxide
+
+adsorption energy: energy change when molecule binds to surface
+                   E_ads = E(slab + adsorbate) - E(slab) - E(molecule)
+                   negative ==> favorable
+    impacted by: 
+        • d-band of metal rel. to Fermi level
+        • molecule's orbitals available to interact
+        • geometry (site, surface facet)
+
+homogeneous catalysis: catalyst and reactants in same phase (mixed in solution together)
+heterogeneous catalysis: catalyst and reactants are in different phases
+    ex. Haber-Bosch process. N₂ + H₂ → NH₃ over an iron surface (gasses flow over it)
+
+
