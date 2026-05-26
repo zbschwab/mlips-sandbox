@@ -1,0 +1,31 @@
+THEORY NOTES
+
+STRESS
+stress = force/unit area
+describes how material resists deformation
+
+stress tensor (for 3D solid):
+     Fx  Fy  Fz
+x  [ xx  xy  xz ]
+y  [ yx  yy  yz ]
+z  [ zx  zy  zz ]
+
+diagonal entries: normal stresses
+others are shear stresses
+
+b/c stress tensor is symmetric (xy = yx, etc.),
+Voigt notation lists [xx, yy, zz, yz, xz, xy]
+
+bulk stress tensor: tensor for unit cell, describes overall mechanical state of material
+per-atom stress: separate tensor for each atom, decomposes bulk stress into atomic contributions
+                 finds where stress is localized (ie. near a defect or surface)
+
+
+FUNCTION MINIMIZATION
+Newton's method: use gradient 'g' (1st deriv.) and Hessian 'H' (2nd deriv.) matrix to find min w/
+    x_new = x_old - H⁻¹ · g
+    (Hessian gives curvature, so you take more well-informed steps than w/ gradient descent)
+
+computing 3N x 3N derivs for Hessian is expensive, so BFGS approximates H and updates with each step
+
+
