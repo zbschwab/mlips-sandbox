@@ -50,3 +50,9 @@ heterogeneous catalysis: catalyst and reactants are in different phases
     ex. Haber-Bosch process. N₂ + H₂ → NH₃ over an iron surface (gasses flow over it)
 
 
+CONVEX HULL (thermodynamic stability)
+
+MLIPs ARCHITECTURES
+message-passing GNNs: structure represented as graph, scalar information (distances) 
+                      iteratively passed between atom nodes until each node encodes local env
+equivariant NNs: subset of msg-passing GNN, passes vector + tensor features 
